@@ -1,0 +1,15 @@
+!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Select, Textarea and Buttons</title>
+<style>body{font-family:Arial,sans-serif;max-width:600px;margin:24px auto;padding:0 16px}label{display:block;margin:14px 0 6px}select,textarea{width:100%;padding:9px}button{padding:9px 16px;margin:12px 8px 0 0}</style></head>
+<body>
+  <h1>Course Feedback Form</h1>
+  <form>
+    <label for="course">Choose your course:</label>
+    <select id="course" name="course" required><option value="">-- Select a course --</option><option>B.Tech</option><option>BCA</option><option>MCA</option></select>
+    <label for="feedback">Your feedback:</label>
+    <textarea id="feedback" name="feedback" rows="5" placeholder="Write your feedback here..."></textarea>
+    <div><button type="submit">Submit</button><button type="reset">Reset</button><button type="button" onclick="alert('Thank you for visiting!')">Click Me</button></div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Nested and Responsive Tables</title>
+<style>body{font-family:Arial,sans-serif}.table-wrap{overflow-x:auto;max-width:100%}table{border-collapse:collapse;min-width:650px}th,td{border:1px solid #555;padding:10px}th{background:#e0e7ff}</style></head>
+<body>
+  <h1>Nested and Responsive Tables</h1>
+  <h2>Nested Table</h2>
+  <table>
+    <tr><th>Student</th><th>Contact Details</th></tr>
+    <tr><td>Neha</td><td><table><tr><th>Email</th><th>Phone</th></tr><tr><td>neha@gmail.com</td><td>9876543210</td></tr></table></td></tr>
+  </table>
+  <h2>Responsive Table</h2>
+  <p>On a small screen, scroll horizontally to view all columns.</p>
+  <div class="table-wrap" role="region" aria-label="Student records table" tabindex="0">
+    <table><tr><th>Roll No.</th><th>Name</th><th>Course</th><th>Semester</th><th>Email</th><th>City</th></tr>
+      <tr><td>101</td><td>Aman</td><td>B.Tech</td><td>1</td><td>aman@gmail.com</td><td>Ghaziabad</td></tr>
+      <tr><td>102</td><td>Riya</td><td>B.Tech</td><td>1</td><td>riya@gmail.com</td><td>Noida</td></tr>
+    </table>
+  </div>
+</body>
+</html>

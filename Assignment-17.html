@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Form Validation</title>
+<style>body{font-family:Arial,sans-serif;max-width:550px;margin:24px auto;padding:0 16px}label{display:block;margin-top:12px}input{display:block;padding:9px;width:100%;max-width:100%;box-sizing:border-box}button{margin-top:16px;padding:10px 18px}</style></head>
+<body>
+  <h1>Student Details Form</h1>
+  <p>Complete all fields. The browser checks the entries before submission.</p>
+  <form action="submit.php" method="post">
+    <label for="name">Full Name (minimum 3 characters)</label><input id="name" name="name" type="text" minlength="3" maxlength="40" required>
+    <label for="email">Email</label><input id="email" name="email" type="email" required>
+    <label for="mobile">Mobile (exactly 10 digits)</label><input id="mobile" name="mobile" type="tel" pattern="[0-9]{10}" title="Enter exactly 10 digits" required>
+    <label for="password">Password (minimum 8 characters)</label><input id="password" name="password" type="password" minlength="8" required>
+    <label for="age">Age (18 to 30)</label><input id="age" name="age" type="number" min="18" max="30" required>
+    <button type="submit">Submit</button>
+  </form>
+  <p><strong>Note:</strong> This form demonstrates client-side validation. A working server endpoint named submit.php is required to process POST data.</p>
+</body>
+</html>

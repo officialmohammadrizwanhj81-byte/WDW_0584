@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Accessible Web Page</title>
+<style>body{font-family:Arial,sans-serif;line-height:1.6;margin:24px}a:focus,button:focus{outline:3px solid #f59e0b;outline-offset:3px}.skip{position:absolute;left:-9999px}.skip:focus{left:10px;top:10px;background:white;padding:10px}</style></head>
+<body>
+  <a class="skip" href="#main">Skip to main content</a>
+  <header><h1>Accessible Student Portal</h1></header>
+  <nav aria-label="Main navigation"><a href="#main">Dashboard</a> | <a href="#help">Help</a></nav>
+  <main id="main">
+    <h2>Welcome Students</h2>
+    <img src="https://placehold.co/320x160?text=Campus" alt="Illustration representing a college campus" width="320">
+    <p>This page demonstrates a language declaration, descriptive alternative text, an ARIA label and a skip link.</p>
+    <button type="button" aria-label="Open student help information">Student Help</button>
+    <p id="help">Use the navigation links or keyboard Tab key to move through this page.</p>
+  </main>
+</body>
+</html>
